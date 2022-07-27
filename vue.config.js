@@ -1,6 +1,7 @@
 const { name } = require('./package');
 module.exports = {
-  publicPath: '/child/vue-history/',
+  outputDir: 'c-vue',
+  publicPath: '/c-vue/',
   devServer: {
     headers: {
       'Access-Control-Allow-Origin': '*',

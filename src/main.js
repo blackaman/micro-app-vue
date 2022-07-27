@@ -9,7 +9,7 @@ let router = null;
 function render() {
   router = createRouter({
     history: createWebHistory(),
-    base: window.__POWERED_BY_QIANKUN__ ? '/app-vue-history/' : '/child/vue-history/',
+    base: window.__POWERED_BY_QIANKUN__ ? '/vue/' : '/c-vue/',
     routes: [],
   });
 
@@ -19,7 +19,7 @@ function render() {
   }).$mount('#app');
 }
 
-  render();
+render();
 
 /**
  * bootstrap 只会在微应用初始化的时候调用一次，下次微应用重新进入时会直接调用 mount 钩子，不会再重复触发 bootstrap。
